@@ -1,0 +1,14 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "/Users/juliankrispel/projects/zettel-react-native"
+    }
+  ],
+    "settings": {
+        "typescript.tsdk": "zettel/node_modules/typescript/lib",
+        "editor.tabSize": 2
+    }
+}

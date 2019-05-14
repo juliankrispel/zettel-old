@@ -1,0 +1,294 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`createEditorState creates editor state with character data 1`] = `
+Object {
+  "changeIndex": 0,
+  "changes": Array [],
+  "content": Array [
+    Object {
+      "characterData": Array [
+        Object {
+          "marks": Array [
+            "bold",
+          ],
+        },
+        Object {
+          "marks": Array [
+            "bold",
+          ],
+        },
+        Object {
+          "marks": Array [
+            "bold",
+          ],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [
+            "italic",
+            "1",
+          ],
+        },
+        Object {
+          "marks": Array [
+            "italic",
+            "1",
+          ],
+        },
+        Object {
+          "marks": Array [
+            "italic",
+            "1",
+          ],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+      ],
+      "children": Array [],
+      "key": "1",
+      "text": "hello my friend",
+    },
+  ],
+  "currentCharacterData": Object {
+    "entity": null,
+    "marks": Array [],
+  },
+  "entityMap": undefined,
+  "lastCommitted": null,
+  "selection": Object {
+    "endKey": "1",
+    "endOffset": 0,
+    "startKey": "1",
+    "startOffset": 0,
+  },
+}
+`;
+
+exports[`createEditorState creates editor state with nested structure 1`] = `
+Object {
+  "changeIndex": 0,
+  "changes": Array [],
+  "content": Array [
+    Object {
+      "characterData": Array [
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+      ],
+      "children": Array [
+        Object {
+          "characterData": Array [
+            Object {
+              "marks": Array [],
+            },
+            Object {
+              "marks": Array [],
+            },
+            Object {
+              "marks": Array [],
+            },
+          ],
+          "children": Array [
+            Object {
+              "characterData": Array [
+                Object {
+                  "marks": Array [],
+                },
+                Object {
+                  "marks": Array [],
+                },
+                Object {
+                  "marks": Array [],
+                },
+              ],
+              "children": Array [
+                Object {
+                  "characterData": Array [
+                    Object {
+                      "marks": Array [],
+                    },
+                    Object {
+                      "marks": Array [],
+                    },
+                    Object {
+                      "marks": Array [],
+                    },
+                    Object {
+                      "marks": Array [],
+                    },
+                    Object {
+                      "marks": Array [],
+                    },
+                  ],
+                  "children": Array [],
+                  "key": "4",
+                  "text": "Three",
+                },
+                Object {
+                  "characterData": Array [
+                    Object {
+                      "marks": Array [],
+                    },
+                    Object {
+                      "marks": Array [],
+                    },
+                    Object {
+                      "marks": Array [],
+                    },
+                  ],
+                  "children": Array [
+                    Object {
+                      "characterData": Array [
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                        Object {
+                          "marks": Array [],
+                        },
+                      ],
+                      "children": Array [],
+                      "key": "6",
+                      "text": "Last Kid",
+                    },
+                  ],
+                  "key": "5",
+                  "text": "end",
+                },
+              ],
+              "key": "3",
+              "text": "Two",
+            },
+            Object {
+              "characterData": Array [
+                Object {
+                  "marks": Array [],
+                },
+                Object {
+                  "marks": Array [],
+                },
+                Object {
+                  "marks": Array [],
+                },
+                Object {
+                  "marks": Array [],
+                },
+              ],
+              "children": Array [],
+              "key": "7",
+              "text": "Four",
+            },
+          ],
+          "key": "2",
+          "text": "One",
+        },
+        Object {
+          "characterData": Array [
+            Object {
+              "marks": Array [],
+            },
+            Object {
+              "marks": Array [],
+            },
+            Object {
+              "marks": Array [],
+            },
+            Object {
+              "marks": Array [],
+            },
+          ],
+          "children": Array [],
+          "key": "8",
+          "text": "Five",
+        },
+      ],
+      "key": "1",
+      "text": "start ",
+    },
+    Object {
+      "characterData": Array [
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+        Object {
+          "marks": Array [],
+        },
+      ],
+      "children": Array [],
+      "key": "9",
+      "text": "Six",
+    },
+  ],
+  "currentCharacterData": Object {
+    "entity": null,
+    "marks": Array [],
+  },
+  "entityMap": undefined,
+  "lastCommitted": null,
+  "selection": Object {
+    "endKey": "1",
+    "endOffset": 0,
+    "startKey": "1",
+    "startOffset": 0,
+  },
+}
+`;
