@@ -24,8 +24,10 @@ export default function setDomSelection(
   { startOffset, endOffset, startKey, endKey }: SelectionState
 ): void {
   const newSelection = window.getSelection()
-  const startNodes = containerNode.querySelectorAll(`[data-block-key="${startKey}"]`)
-  const endNodes = containerNode.querySelectorAll(`[data-block-key="${endKey}"]`)
+  // @ts-ignore
+  const startNodes: any[] = containerNode.querySelectorAll(`[data-block-key="${startKey}"]`)
+  // @ts-ignore
+  const endNodes: any[] = containerNode.querySelectorAll(`[data-block-key="${endKey}"]`)
 
   const startFragment = Array.from(startNodes).find(node => {
     return parseInt(node.dataset.fragmentStart) <= startOffset &&
@@ -44,12 +46,12 @@ export default function setDomSelection(
   const startNode = findRangeTarget(startFragment)
   const endNode = findRangeTarget(endFragment)
 
-  newSelection.removeAllRanges()
+  newSelection && newSelection.removeAllRanges()
   const range = document.createRange()
 
   if (startNode != null && endNode != null) {
     range.setStart(startNode, startOffset - startFragmentOffset)
     range.setEnd(endNode, endOffset - endFragmentOffset)
-    newSelection.addRange(range)
+    newSelection && newSelection.addRange(range)
   }
 }

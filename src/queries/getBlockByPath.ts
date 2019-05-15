@@ -7,7 +7,7 @@ export default function getBlockByPath(
   return path.reduce((
     obj: ContentState | Block | null,
     index: number
-  ): Block | null => {
+  ) => {
     if (obj == null) {
       return null
     } else if (Array.isArray(obj)) {
@@ -17,5 +17,6 @@ export default function getBlockByPath(
     }
 
     return null
+    // @ts-ignore
   }, content)
 }
