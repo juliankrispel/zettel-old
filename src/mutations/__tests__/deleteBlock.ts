@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import { commit } from '../../history'
 import deleteBlock from '../deleteBlock'
@@ -19,10 +17,12 @@ describe('deleteBlock', () => {
       }]
     }]})
 
+    const key: any = (initialState.content[0].children && initialState.content[0].children[0].key)
+
     const newEditorState = commit(
       initialState,
       deleteBlock,
-      initialState.content[0].children[0].key
+      key
     )
 
     const { content } = createEditorState({ blocks: [{

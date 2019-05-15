@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import getBlockMap from '../getBlockMap'
 
@@ -47,12 +45,16 @@ describe('getBlockMap', () => {
         path: [0],
         block: content[0]
       },
+      // @ts-ignore
       [content[0].children[0].key]: {
         path: [0, 0],
+        // @ts-ignore
         block: content[0].children[0]
       },
+      // @ts-ignore
       [content[0].children[0].children[0].key]: {
         path: [0, 0, 0],
+        // @ts-ignore
         block: content[0].children[0].children[0]
       },
       [content[1].key]: {

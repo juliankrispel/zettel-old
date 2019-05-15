@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import getCharacterDataInRange from '../getCharacterDataInRange'
 

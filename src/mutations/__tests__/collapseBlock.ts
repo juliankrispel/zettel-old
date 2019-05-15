@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import { commit } from '../../history'
 import collapseBlock from '../collapseBlock'
@@ -21,10 +19,12 @@ describe('collapseBBlock', () => {
       }]
     })
 
+    const key: any = (initialState.content[0].children && initialState.content[0].children[0].key)
+
     const newEditorState = commit(
       initialState,
       collapseBlock,
-      initialState.content[0].children[0].key
+      key
     )
 
     const { content } = createEditorState({
@@ -61,10 +61,12 @@ describe('collapseBBlock', () => {
       }]
     }]})
 
+    const key: any = (initialState.content[0].children && initialState.content[0].children[0].key)
+
     const newEditorState = commit(
       initialState,
       collapseBlock,
-      initialState.content[0].children[0].key
+      key
     )
 
     const { content } = createEditorState({

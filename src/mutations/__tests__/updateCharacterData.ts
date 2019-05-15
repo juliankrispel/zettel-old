@@ -1,7 +1,6 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import { commit } from '../../history'
+import { CharacterData } from '../../types'
 import updateCharacterData from '../updateCharacterData'
 
 describe('updateCharacterData', () => {
@@ -32,7 +31,7 @@ describe('updateCharacterData', () => {
       initialState,
       updateCharacterData,
       selection,
-      (data) => {
+      (data: CharacterData) => {
         data.marks.push('bold')
       }
     )

@@ -1,7 +1,7 @@
 import { TextFragment, Block, EntityMap } from '../types'
 import hasEqualCharacterData from '../hasEqualCharacterData'
 
-export default function createTextFragments(block: Block, entityMap: EntityMap): Array<TextFragment> {
+export default function createTextFragments(block: Block, entityMap: EntityMap = {}): Array<TextFragment> {
   const start: any[] = []
   return block.characterData.reduce(
     (acc, data, index) => {

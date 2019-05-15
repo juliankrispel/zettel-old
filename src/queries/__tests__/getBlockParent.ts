@@ -17,8 +17,10 @@ const { content } = createEditorState({ blocks: [{
 
 describe('getBlockParent', () => {
   test('gets correct block', () => {
+    // @ts-ignore
     const expectedState = content[0].children[0]
 
+    // @ts-ignore
     expect(getBlockParent(content, content[0].children[0].children[0].key)).toEqual(expectedState)
   })
 

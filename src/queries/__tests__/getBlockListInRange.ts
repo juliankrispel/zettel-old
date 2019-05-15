@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import getBlockListInRange from '../getBlockListInRange'
 
@@ -15,13 +13,16 @@ const { content } = createEditorState({ blocks: [{
   text: 'Four'
 }]})
 
+// @ts-ignore
+const child = content[0].children[0]
+
 describe('getBlockListInRange', () => {
   describe('filter blocks that touch selection', () => {
     test('when range starts with parent and ends with child', () => {
       const selection = {
         startKey: content[0].key,
         startOffset: 0,
-        endKey: content[0].children[0].key,
+        endKey: child.key,
         endOffset: 2
       }
 
@@ -31,8 +32,8 @@ describe('getBlockListInRange', () => {
         block: content[0]
       }, {
         path: [0, 0],
-        key: content[0].children[0].key,
-        block: content[0].children[0]
+        key: child.key,
+        block: child
       }]
 
       expect(getBlockListInRange(content, selection)).toEqual(expectedState)
@@ -40,7 +41,7 @@ describe('getBlockListInRange', () => {
 
     test('when range starts with child and ends with parent', () => {
       const selection = {
-        startKey: content[0].children[0].key,
+        startKey: child.key,
         startOffset: 0,
         endKey: content[1].key,
         endOffset: 2
@@ -48,11 +49,13 @@ describe('getBlockListInRange', () => {
 
       const expectedState = [{
         path: [0, 0],
-        key: content[0].children[0].key,
-        block: content[0].children[0]
+        key: child.key,
+        block: child
       }, {
         path: [0, 0, 0],
+        // @ts-ignore
         key: content[0].children[0].children[0].key,
+        // @ts-ignore
         block: content[0].children[0].children[0]
       }, {
         path: [1],

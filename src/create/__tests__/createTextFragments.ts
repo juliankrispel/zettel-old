@@ -42,7 +42,7 @@ describe('createTextFragments', () => {
         }, {
           offset: 3,
           length: 9,
-          entities: ['1']
+          entity: '1'
         }]
       })
 

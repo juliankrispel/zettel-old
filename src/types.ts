@@ -70,7 +70,7 @@ export type RawBlock = {
 
 export type RawContentState = {
   blocks: Array<RawBlock>,
-  selection: SelectionState,
+  selection?: SelectionState,
   entityMap?: EntityMap
 }
 

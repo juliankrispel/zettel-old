@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import getBlockAfter from '../getBlockAfter'
 
@@ -17,6 +15,7 @@ const { content } = createEditorState({ blocks: [{
 
 describe('getBlockAfter', () => {
   test('gets correct block', () => {
+    // @ts-ignore
     expect(getBlockAfter(content, content[0].children[0].children[0].key)).toEqual(content[1])
   })
 

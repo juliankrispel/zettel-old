@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import { commit } from '../../history'
 import toggleCurrentMark from '../toggleCurrentMark'

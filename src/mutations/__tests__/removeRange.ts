@@ -1,7 +1,5 @@
-// @flow
-
 import { createEditorState } from '../../create'
-import type { SelectionState } from '../../types'
+import { SelectionState } from '../../types'
 import { commit } from '../../history'
 import removeRange from '../removeRange'
 

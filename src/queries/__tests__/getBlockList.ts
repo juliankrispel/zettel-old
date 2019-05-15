@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import getBlockList from '../getBlockList'
 
@@ -48,11 +46,15 @@ describe('getBlockList', () => {
       block: content[0]
     }, {
       path: [0, 0],
+      // @ts-ignore
       key: content[0].children[0].key,
+      // @ts-ignore
       block: content[0].children[0]
     }, {
       path: [0, 0, 0],
+      // @ts-ignore
       key: content[0].children[0].children[0].key,
+      // @ts-ignore
       block: content[0].children[0].children[0]
     }, {
       path: [1],

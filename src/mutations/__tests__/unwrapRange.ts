@@ -1,5 +1,3 @@
-// @flow
-
 describe('unwrapRange', () => {
   test('moves range of blocks before parent if selection contains top edge', () => {
   })

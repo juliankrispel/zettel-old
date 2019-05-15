@@ -1,5 +1,3 @@
-// @flow
-
 import { createEditorState } from '../../create'
 import getPreviousCharacterData from '../getPreviousCharacterData'
 
@@ -26,6 +24,11 @@ describe('getPreviousCharacterData', () => {
   })
 
   test('returns null if block does not exist', () => {
-    expect(getPreviousCharacterData(content, 'key-does-not-exist')).toBeNull()
+    expect(getPreviousCharacterData(content, {
+      startOffset: 0,
+      endOffset: 1,
+      startKey: 'key-does-not-exist',
+      endKey: 'key-does-not-exist',
+    })).toBeNull()
   })
 })

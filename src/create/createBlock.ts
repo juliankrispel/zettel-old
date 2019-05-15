@@ -5,8 +5,8 @@ import createCharacterData from './createCharacterData'
 export default function createBlock (block: RawBlock): Block {
   const { children, text = '', key, characterRanges, ...rest } = block
 
-  if (process.env.NODE_ENV !== 'production' && key != null && !isNaN(Number(key))) {
-    throw new Error('block key can not be a number')
+  if (process.env.NODE_ENV === 'development' && key != null && !isNaN(Number(key))) {
+    throw new Error(`block key can not be number ${key}`)
   }
 
   const newBlock: Block = {
