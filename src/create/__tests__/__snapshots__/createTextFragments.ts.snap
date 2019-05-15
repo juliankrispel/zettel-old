@@ -37,10 +37,19 @@ Array [
       "italic",
     ],
     "offset": 1,
-    "text": "ell",
+    "text": "el",
   },
   Object {
-    "entity": null,
+    "entity": undefined,
+    "marks": Array [
+      "bold",
+      "italic",
+    ],
+    "offset": 3,
+    "text": "l",
+  },
+  Object {
+    "entity": undefined,
     "marks": Array [
       "italic",
     ],
@@ -48,7 +57,7 @@ Array [
     "text": "o W",
   },
   Object {
-    "entity": null,
+    "entity": undefined,
     "marks": Array [],
     "offset": 7,
     "text": "orld",

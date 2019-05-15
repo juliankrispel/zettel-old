@@ -74,11 +74,10 @@ Object {
     },
   ],
   "currentCharacterData": Object {
-    "entity": null,
     "marks": Array [],
   },
   "entityMap": undefined,
-  "lastCommitted": null,
+  "lastCommitted": "",
   "selection": Object {
     "endKey": "1",
     "endOffset": 0,
@@ -279,11 +278,10 @@ Object {
     },
   ],
   "currentCharacterData": Object {
-    "entity": null,
     "marks": Array [],
   },
   "entityMap": undefined,
-  "lastCommitted": null,
+  "lastCommitted": "",
   "selection": Object {
     "endKey": "1",
     "endOffset": 0,
