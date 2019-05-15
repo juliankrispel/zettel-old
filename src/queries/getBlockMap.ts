@@ -3,7 +3,7 @@ import { BlockMap, ContentState } from '../types'
 export default function getBlockMap(
   content: ContentState,
   _path: Array<number> = []
-  // ^ Only used to accumulate the path
+  // ^ Only used for recursion
 ): BlockMap {
   return content.reduce(
     (acc, block, index) => {

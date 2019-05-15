@@ -20,7 +20,7 @@ const { content } = createEditorState({ blocks: [{
   }]
 }]})
 
-describe('getCharacterDataInRange.js', () => {
+describe('getCharacterDataInRange', () => {
   test('gets character data in range', () => {
     const selection = {
       startKey: '1',

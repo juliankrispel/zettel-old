@@ -61,8 +61,8 @@ export default function handleKeyDown (editorState: EditorState, event: Keyboard
     newEditorState = commit(editorState, replaceText, editorState.selection, event.key)
   } else if (isCopy(event)) {
     console.log('copy')
-    const ev: ClipboardEvent = event;
-    ev.clipboardData.setData('application/json', )
+    // const ev: ClipboardEvent = event;
+    // ev.clipboardData.setData('application/json', )
     // handle copy
 
   } else if (isPaste(event)) {
