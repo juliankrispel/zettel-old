@@ -1,4 +1,4 @@
-# editable-js
+# zettel
 
 Disclaimer: Currently I'm working on the prototype, this isn't even ready to contribute to
 
